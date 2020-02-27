@@ -1,5 +1,6 @@
 package com.revature.controllers;
 
+import java.io.Console;
 import java.util.List;
 
 import javax.validation.Valid;
@@ -34,7 +35,7 @@ import io.swagger.annotations.ApiOperation;
 
 @RestController
 @RequestMapping("/cars")
-@CrossOrigin
+@CrossOrigin(origins = "*")
 @Api(tags= {"Car"})
 public class CarController {
 	
@@ -73,9 +74,9 @@ public class CarController {
 	
 	
 	@ApiOperation(value="Updates car by id", tags= {"Car"})
-	@PutMapping("/{id}")
+	@PutMapping
 	public Car updateCar(@Valid @RequestBody Car car) {
-		
+		System.out.println(car);
 		return cs.updateCar(car);
 	}
 	

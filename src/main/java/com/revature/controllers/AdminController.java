@@ -34,7 +34,7 @@ import io.swagger.annotations.ApiOperation;
 
 @RestController
 @RequestMapping("/admins")
-@CrossOrigin
+@CrossOrigin(origins = "*")
 @Api(tags= {"Admin"})
 public class AdminController {
 	

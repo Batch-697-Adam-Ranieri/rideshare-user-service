@@ -35,7 +35,7 @@ import io.swagger.annotations.ApiOperation;
 
 @RestController
 @RequestMapping("/batches")
-@CrossOrigin
+@CrossOrigin(origins = "*")
 @Api(tags= {"Batch"})
 public class BatchController {
 	
