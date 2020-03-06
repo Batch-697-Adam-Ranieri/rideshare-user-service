@@ -4,8 +4,10 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.HashMap;
+import java.util.HashSet;
 import java.util.List;
 import java.util.Map;
+import java.util.Set;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
@@ -34,11 +36,11 @@ public class DistanceServiceImpl implements DistanceService {
 	ConfigurationService cs;
 
 	@Override
-	public List<Employee> distanceMatrix(String[] origins, String[] destinations)
+	public Set<Employee> distanceMatrix(String[] origins, String[] destinations)
 			throws ApiException, InterruptedException, IOException {
 		Map<String, Employee> userDestMap = new HashMap<String, Employee>();
 
-		List<String> destinationList = new ArrayList<String>();
+		Set<String> destinationList = new HashSet<String>();
 
 		for (Employee d : es.getActiveDrivers()) {
 
@@ -109,16 +111,16 @@ public class DistanceServiceImpl implements DistanceService {
 
 		destArray = destList.toArray(destArray);
 
-		List<Employee> userList = new ArrayList<Employee>();
+		Set<Employee> employeeSet = new HashSet<Employee>();
 
 		for (int x = 0; x < destArray.length; x++) {
 			Employee a = userDestMap.get(destArray[x]);
 			System.out.println(a);
-			userList.add(a);
-			System.out.println(userList);
+			employeeSet.add(a);
+			System.out.println(employeeSet);
 		}
 
-		return userList;
+		return employeeSet;
 	}
 
 	@Override
@@ -127,8 +129,8 @@ public class DistanceServiceImpl implements DistanceService {
 	}
 
 	@Override
-	public List<Employee> getDriverByLocation(String address) throws ApiException, InterruptedException, IOException {
-		List<String> destinationList = new ArrayList<String>();
+	public Set<Employee> getDriverByLocation(String address) throws ApiException, InterruptedException, IOException {
+		Set<String> destinationList = new HashSet<String>();
 		String[] origins = { address };
 		
 		Map<String, Employee> topfive = new HashMap<String, Employee>();
