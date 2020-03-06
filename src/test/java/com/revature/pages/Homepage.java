@@ -81,6 +81,11 @@ public class Homepage {
 	@FindBy(id = "hZipInput")
 	public WebElement registerZipInput;
 	
+
+	//office input box
+	@FindBy(id="location")
+	public WebElement registerOfficeInput;
+
 	//driver checkbox
 	@FindBy(id="driver")
 	public WebElement registerDriverCheckBox;
