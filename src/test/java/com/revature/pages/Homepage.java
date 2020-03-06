@@ -244,7 +244,23 @@ public class Homepage {
 	public WebElement employeepromoteBtn;
 
 
-
+// The Navigation bar 
+	
+	// the drop down to get to the profile 
+	@FindBy(id ="user-dropa")
+	public WebElement userDropDownBtn;
+	
+	// the profile button in the nav bar
+	@FindBy(id="profile-btn")
+	public WebElement profileBtn;
+	
+	// the logout button in the nav bar
+	@FindBy(id="logout-btn")
+	public WebElement logoutBtn;
+	
+	// the drivers button 
+	@FindBy(id="driver-btn")
+	public WebElement driverBtn;
 
 
 

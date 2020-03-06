@@ -3,11 +3,11 @@ Feature: Admin pages and things he can do
 
 
 Scenario: Admin Login
-Given The user is on the home page
-When The user clicks on the login button 
-When  The user types in the username
-When  The user types in the password
-When  The user clicks on the submit button
+Given The user is on the HomePage
+When The user clicks on the LoginBtn
+When  The user types in the Username
+When  The user types in the Password
+When  The user clicks on the SubmitBtn
 Then  The user will be on the Admin Page
 
 Scenario: Admin Changes their Contact
