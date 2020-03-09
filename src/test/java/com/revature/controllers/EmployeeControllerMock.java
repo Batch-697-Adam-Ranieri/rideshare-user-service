@@ -179,7 +179,7 @@ public class EmployeeControllerMock {
 	@Test
 	void getDriverByLocation() {
 		Office office1 = new Office(1, "312 Railroad St.");
-		Employee employee1 = new Employee(1, "yo@hotmail.com", "Joe", "Mack", "314-532-3145", "Bro123", "password",
+		Employee employee1 = new Employee(1, "yo@gmail.com", "Joe", "Mack", "314-532-3145", "Bro123", "password",
 				"123 Morgo town", true, true, false, false, office1);
 		
 		Office office2 = new Office(2, "315 Railroad St.");
@@ -191,6 +191,7 @@ public class EmployeeControllerMock {
 				"123 Morgo town", true, true, true, false, office3);
 		
 		List<Employee> employees = new ArrayList<Employee>();
+		employees.add(employee1);
 		employees.add(employee2);
 		employees.add(employee3);
 		
