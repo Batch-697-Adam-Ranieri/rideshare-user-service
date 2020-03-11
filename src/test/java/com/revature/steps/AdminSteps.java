@@ -18,32 +18,32 @@ public class AdminSteps {
 	
 	
 
-@Given("^The user is on the home page$")
-public void the_user_is_on_the_home_page() throws Throwable {
+@Given("^The user is on the HomePage$")
+public void the_user_is_on_the_HomePage() throws Throwable {
 	driver.get("http://localhost:4200/home");
 }
 
 
 
 // login as Admin
-@When("^The user clicks on the login button$")
-public void the_user_clicks_on_the_login_button() throws Throwable {
+@When("^The user clicks on the LoginBtn$")
+public void the_user_clicks_on_the_LoginBtn() throws Throwable {
 	homepage.loginBtn.click();
 }
 
-@When("^The user types in the username$")
-public void the_user_types_in_the_username() throws Throwable {
+@When("^The user types in the Username$")
+public void the_user_types_in_the_Username() throws Throwable {
 	homepage.usernameInput.sendKeys("aford");
 }
 
-@When("^The user types in the password$")
-public void the_user_types_in_the_password() throws Throwable {
+@When("^The user types in the Password$")
+public void the_user_types_in_the_Password() throws Throwable {
 	 homepage.passwordInput.sendKeys("apassword");
 }
 
 
-@When("^The user clicks on the submit button$")
-public void the_user_clicks_on_the_submit_button() throws Throwable {
+@When("^The user clicks on the SubmitBtn$")
+public void the_user_clicks_on_the_SubmitBtn() throws Throwable {
 	homepage.submitBtn.click();
 }
 
