@@ -45,7 +45,7 @@ public class Homepage {
 	@FindBy(id = "lastname")
 	public WebElement registerLastNameInput;
 	
-	//emal input box
+	//email input box
 	@FindBy(id = "email")
 	public WebElement registerEmailInput;
 	
@@ -170,6 +170,10 @@ public class Homepage {
 	@FindBy(css = "[value='FL']")
 	public WebElement locationStateOption;
 	
+	//Zip Code input box
+	@FindBy(id ="employeeZipcodeInput")
+	public WebElement locationZipInput;
+	
 	//update button
 	@FindBy(id = "updateButton")
 	public WebElement locationUpdateBtn;
@@ -278,11 +282,11 @@ public class Homepage {
 // The Navigation bar 
 	
 	// the drop down to get to the profile 
-	@FindBy(id ="user-dropa")
+	@FindBy(id ="navbarDropdown")
 	public WebElement userDropDownBtn;
 	
 	// the profile button in the nav bar
-	@FindBy(id="profile-btn")
+	@FindBy(id="profileAnchor")
 	public WebElement profileBtn;
 	
 	// the logout button in the nav bar
@@ -294,12 +298,4 @@ public class Homepage {
 	public WebElement driverBtn;
 
 
-
-	
-	
-	
-	
-	
-	
-	
 }
