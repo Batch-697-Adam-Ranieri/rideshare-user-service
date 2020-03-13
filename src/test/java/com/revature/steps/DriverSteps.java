@@ -28,12 +28,12 @@ public class DriverSteps {
 
 	@When("The driver types in the login username")
 	public void the_driver_types_in_the_login_username() {
-	   homepage.usernameInput.sendKeys("SLob");
+	   homepage.usernameInput.sendKeys("domi-kohai");
 	}
 
 	@When("The driver types in the login password")
 	public void the_driver_types_in_the_login_password() {
-	     homepage.passwordInput.sendKeys("slobster");
+	     homepage.passwordInput.sendKeys("go");
 	}
 
 	@When("The driver clicks log in")
@@ -44,7 +44,8 @@ public class DriverSteps {
 	}
 
 	@Then("The driver should be on the Profile page")
-	public void the_driver_should_be_on_the_Profile_page() {
+	public void the_driver_should_be_on_the_Profile_page() throws InterruptedException {
+		Thread.sleep(1000);
 	  Assert.assertEquals(driver.getTitle(), "Profile Page - RideShare");
 	}
 
@@ -133,8 +134,9 @@ public class DriverSteps {
 
 	@When("The driver clicks the address update button")
 	public void the_driver_clicks_the_address_update_button() {
-	    homepage.locationUpdateBtn.click();
 	    driver.manage().timeouts().implicitlyWait(1, TimeUnit.SECONDS);
+
+		homepage.locationUpdateBtn.click();
 	}
 
 	@When("The driver clicks on the city dropdown button")
@@ -185,7 +187,7 @@ public class DriverSteps {
 
 	@When("The driver types in the color")
 	public void the_driver_types_in_the_color() {
-	    homepage.carColourInput.sendKeys("Blue");
+	    homepage.carColourInput.sendKeys("Yellow");
 	}
 
 	@When("The driver clicks on the seats dropdown button")
@@ -216,7 +218,8 @@ public class DriverSteps {
 	}
 
 	@Then("The driver should be on the Home page")
-	public void the_driver_should_be_on_the_Home_page() {
+	public void the_driver_should_be_on_the_Home_page() throws InterruptedException {
+		Thread.sleep(1000);
 	    Assert.assertEquals(driver.getTitle(), "Home - RideShare");
 	    driver.manage().timeouts().implicitlyWait(1, TimeUnit.SECONDS);
 	}

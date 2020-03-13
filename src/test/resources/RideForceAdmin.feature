@@ -11,9 +11,10 @@ When  The user clicks on the SubmitBtn
 Then  The user should be on the Profile Page
 
 Scenario: Admin Changes their Contact
+Given The user is on the Profile Page
 When The user types in the phone number 
 When The user clicks on save
-Then The user should still be on the Profile Page 
+Then The user should be on the Profile Page 
 
 
 

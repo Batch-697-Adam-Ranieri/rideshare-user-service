@@ -148,7 +148,7 @@ public class Homepage {
 	public WebElement activeCheckBox;
 	
 	//save contact button
-	@FindBy(id="updateButton")
+	@FindBy(id="submitButton")
 	public WebElement contactSaveBtn;
 	
 	//location page elements
@@ -235,11 +235,11 @@ public class Homepage {
 //Admin Page
 
 	//edit employee button
-	@FindBy(id="editEmployee")
+	@FindBy(id="managerButton1")
 	public WebElement editEmployeeBtn;
 
 	//edit location button
-	@FindBy(id="editLocation")
+	@FindBy(id="locationButton")
 	public WebElement editLocationBtn;
 
 
@@ -271,15 +271,23 @@ public class Homepage {
 //Edit employee elements
 	
 	//delete an employee button
-	@FindBy(id="delete1")
+	@FindBy(xpath="/html/body/app-root/app-profile/div/div/div[2]/app-manager-edit/div/table/tbody/tr[5]/td[4]/button")
 	public WebElement employeeDeleteBtn;
 	
 	//promote an employee button
-	@FindBy(id="promote1")
+	@FindBy(xpath="/html/body/app-root/app-profile/div/div/div[2]/app-manager-edit/div/table/tbody/tr[2]/td[5]/button")
 	public WebElement employeepromoteBtn;
 
-
-// The Navigation bar 
+	//2nd page of employees
+	@FindBy(xpath="/html/body/app-root/app-profile/div/div/div[2]/app-manager-edit/div/div/pagination-controls/pagination-template/ul/li[4]/a")
+	public WebElement page2Employees;
+	
+	//4th page of employees
+	@FindBy(xpath="/html/body/app-root/app-profile/div/div/div[2]/app-manager-edit/div/div/pagination-controls/pagination-template/ul/li[6]/a")
+	public WebElement page4Employees;
+	
+	
+	// The Navigation bar 
 	
 	// the drop down to get to the profile 
 	@FindBy(id ="navbarDropdown")

@@ -87,7 +87,8 @@ public class RiderSteps {
 	}
 
 	@Then("The registered rider should be on the homepage")
-	public void the_registered_rider_should_be_on_the_homepage() {
+	public void the_registered_rider_should_be_on_the_homepage() throws InterruptedException {
+		Thread.sleep(1000);
 		Assert.assertEquals(driver.getTitle(), "Home - RideShare");
 	}
 
@@ -120,8 +121,9 @@ public class RiderSteps {
 	}
 
 	@Then("The rider should be on the Driver List page")
-	public void the_rider_should_be_on_the_Driver_List_page() {
+	public void the_rider_should_be_on_the_Driver_List_page() throws InterruptedException {
+		Thread.sleep(1000);
 		Assert.assertEquals(driver.getTitle(), "Driver List - RideShare");
-		driver.manage().timeouts().implicitlyWait(1, TimeUnit.SECONDS);
+//		driver.manage().timeouts().implicitlyWait(1, TimeUnit.SECONDS);
 	}
 }
