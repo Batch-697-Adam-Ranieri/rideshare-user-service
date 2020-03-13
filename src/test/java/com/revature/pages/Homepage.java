@@ -215,11 +215,11 @@ public class Homepage {
 	public WebElement carYearInput;
 	
 	//colour input
-	@FindBy(id="colourInput")
-	public WebElement carColourInput;
+	@FindBy(id="colorInput")
+	public WebElement carColorInput;
 	
 	//seat selector
-	@FindBy(id="infoLabel")
+	@FindBy(id="seatSelect")
 	public WebElement seatSelect;
 	
 	//seat option

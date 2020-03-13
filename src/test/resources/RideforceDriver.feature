@@ -31,11 +31,11 @@ Feature: Driver logs in and uses driver services
 			When The driver clicks on a state
 			When The driver types in the zipcode
 			When The driver clicks the address update button
-			When The driver clicks on the city dropdown button
-			When The driver clicks on the city
-			When The driver clicks on the office dropdown button
-			When The driver clicks on an office
-			When The driver clicks on the offices update button
+#			When The driver clicks on the city dropdown button
+#			When The driver clicks on the city
+#			When The driver clicks on the office dropdown button
+#			When The driver clicks on an office
+#			When The driver clicks on the offices update button
 			Then The driver should be on the Profile page
 		
 		Scenario: Driver Edits Car
