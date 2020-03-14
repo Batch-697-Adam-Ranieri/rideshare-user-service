@@ -38,15 +38,15 @@ public class Homepage {
 //Register menu:
 	
 	//first name input box
-	@FindBy(id = "firstname")
+	@FindBy(id = "firstname2")
 	public WebElement registerFNameInput;
 	
 	//last name input box
-	@FindBy(id = "lastname")
+	@FindBy(id = "lastname2")
 	public WebElement registerLastNameInput;
 	
 	//email input box
-	@FindBy(id = "email")
+	@FindBy(id = "email2")
 	public WebElement registerEmailInput;
 	
 	//phone input box
@@ -271,7 +271,7 @@ public class Homepage {
 //Edit employee elements
 	
 	//delete an employee button
-	@FindBy(xpath="/html/body/app-root/app-profile/div/div/div[2]/app-manager-edit/div/table/tbody/tr[5]/td[4]/button")
+	@FindBy(xpath="/html/body/app-root/app-profile/div/div/div[2]/app-manager-edit/div/table/tbody/tr[4]/td[4]/button")
 	public WebElement employeeDeleteBtn;
 	
 	//promote an employee button

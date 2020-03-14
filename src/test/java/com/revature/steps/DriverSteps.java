@@ -55,48 +55,48 @@ public class DriverSteps {
 	@When("The driver types in the first name")
 	public void the_driver_types_in_the_first_name() {
 		homepage.contactFNameInput.clear();
-	    homepage.contactFNameInput.sendKeys("Dominique");
+	   // homepage.contactFNameInput.sendKeys("Dominique");
 
-//	    homepage.contactFNameInput.sendKeys("Yogi");
+	    homepage.contactFNameInput.sendKeys("Yogi");
 	}
 
 	@When("The driver types in the last name")
 	public void the_driver_types_in_the_last_name() {
 		homepage.contactLNameInput.clear();
-		 homepage.contactLNameInput.sendKeys("Rochon");
+		 //homepage.contactLNameInput.sendKeys("Rochon");
 
-//	   homepage.contactLNameInput.sendKeys("Bear");
+	   homepage.contactLNameInput.sendKeys("Bear");
 	}
 
 	@When("The driver types in the email")
 	public void the_driver_types_in_the_email() {
 		homepage.contactEmailInput.clear();
-		   homepage.contactEmailInput.sendKeys("munching@gmail.com");
+		   //homepage.contactEmailInput.sendKeys("munching@gmail.com");
 
-//	   homepage.contactEmailInput.sendKeys("jellystone@gmail.com");
+	   homepage.contactEmailInput.sendKeys("jellystone@gmail.com");
 	}
 
 	@When("The driver types in the phone number")
 	public void the_driver_types_in_the_phone_number() {
 		homepage.contactPhoneInput.clear();
-	    homepage.contactPhoneInput.sendKeys("302-329-9876");
+	   // homepage.contactPhoneInput.sendKeys("302-329-9876");
 
-//	    homepage.contactPhoneInput.sendKeys("302-321-9876");
+	    homepage.contactPhoneInput.sendKeys("302-321-9876");
 	}
 
 	@When("The driver types in the new username")
 	public void the_driver_types_in_the_new_username() {
 		homepage.contactUserInput.clear();
-	    homepage.contactUserInput.sendKeys("domi-kohai");
-//	    homepage.contactUserInput.sendKeys("booboo");
+	    //homepage.contactUserInput.sendKeys("domi-kohai");
+	    homepage.contactUserInput.sendKeys("booboo");
 	}
 
 	@When("The driver types in the new password")
 	public void the_driver_types_in_the_new_password() {
 		homepage.contactPassInput.clear();
-	    homepage.contactPassInput.sendKeys("go");
+	    //homepage.contactPassInput.sendKeys("go");
 
-//	    homepage.contactPassInput.sendKeys("isBestBoi");
+	    homepage.contactPassInput.sendKeys("isBestBoi");
 	}
 
 	@When("The driver clicks the driver checkbox")
@@ -124,18 +124,18 @@ public class DriverSteps {
 	@When("The driver types in the street")
 	public void the_driver_types_in_the_street() {
 		homepage.locationStreetInput.clear();
-	    homepage.locationStreetInput.sendKeys("1111 Lawrence Street");
+//	    homepage.locationStreetInput.sendKeys("1111 Lawrence Street");
 
-//	    homepage.locationStreetInput.sendKeys("1 Palm Dr");
+	    homepage.locationStreetInput.sendKeys("1 Palm Dr");
 	}
 
 
 	@When("The driver types in the city")
 	public void the_driver_types_in_the_city() {
 		homepage.locationCityInput.clear();
-		   homepage.locationCityInput.sendKeys("Lutcher");
+//		   homepage.locationCityInput.sendKeys("Lutcher");
 
-//	   homepage.locationCityInput.sendKeys("New Orleans");
+	   homepage.locationCityInput.sendKeys("New Orleans");
 	}
 
 	@When("The driver clicks on the state dropdown button")
@@ -151,9 +151,9 @@ public class DriverSteps {
 	@When("The driver types in the zipcode")
 	public void the_driver_types_in_the_zipcode() {
 		homepage.locationZipInput.clear();
-	    homepage.locationZipInput.sendKeys("70071");
+//	    homepage.locationZipInput.sendKeys("70071");
 
-//	    homepage.locationZipInput.sendKeys("70124");
+	    homepage.locationZipInput.sendKeys("70124");
 	}
 
 	@When("The driver clicks the address update button")
@@ -163,31 +163,6 @@ public class DriverSteps {
 		homepage.locationUpdateBtn.click();
 	}
 
-//	@When("The driver clicks on the city dropdown button")
-//	public void the_driver_clicks_on_the_city_dropdown_button() {
-//	    homepage.locationOfficeCitySelect.click();
-//	}
-//
-//	@When("The driver clicks on the city")
-//	public void the_driver_clicks_on_the_city() {
-//	    homepage.locationOfficeCityOption.click();
-//	}
-//
-//	@When("The driver clicks on the office dropdown button")
-//	public void the_driver_clicks_on_the_office_dropdown_button() {
-//	    homepage.locationOfficeSelect.click();
-//	}
-//
-//	@When("The driver clicks on an office")
-//	public void the_driver_clicks_on_an_office() {
-//	    homepage.locationOfficeOption.click();
-//	}
-//
-//	@When("The driver clicks on the offices update button")
-//	public void the_driver_clicks_on_the_offices_update_button() {
-//	    driver.manage().timeouts().implicitlyWait(1, TimeUnit.SECONDS);
-//		homepage.locationOfficeUpdateBtn.click();
-//	}
 
 	@When("The driver clicks on the car button")
 	public void the_driver_clicks_on_the_car_button() {
