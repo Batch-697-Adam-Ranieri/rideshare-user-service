@@ -38,15 +38,15 @@ public class Homepage {
 //Register menu:
 	
 	//first name input box
-	@FindBy(id = "firstname")
+	@FindBy(id = "firstname2")
 	public WebElement registerFNameInput;
 	
 	//last name input box
-	@FindBy(id = "lastname")
+	@FindBy(id = "lastname2")
 	public WebElement registerLastNameInput;
 	
-	//emal input box
-	@FindBy(id = "email")
+	//email input box
+	@FindBy(id = "email2")
 	public WebElement registerEmailInput;
 	
 	//phone input box
@@ -148,7 +148,7 @@ public class Homepage {
 	public WebElement activeCheckBox;
 	
 	//save contact button
-	@FindBy(id="updateButton")
+	@FindBy(id="submitButton")
 	public WebElement contactSaveBtn;
 	
 	//location page elements
@@ -169,6 +169,10 @@ public class Homepage {
 	//State option 
 	@FindBy(css = "[value='FL']")
 	public WebElement locationStateOption;
+	
+	//Zip Code input box
+	@FindBy(id ="employeeZipcodeInput")
+	public WebElement locationZipInput;
 	
 	//update button
 	@FindBy(id = "updateButton")
@@ -211,11 +215,11 @@ public class Homepage {
 	public WebElement carYearInput;
 	
 	//colour input
-	@FindBy(id="colourInput")
-	public WebElement carColourInput;
+	@FindBy(id="colorInput")
+	public WebElement carColorInput;
 	
 	//seat selector
-	@FindBy(id="infoLabel")
+	@FindBy(id="seatSelect")
 	public WebElement seatSelect;
 	
 	//seat option
@@ -231,11 +235,11 @@ public class Homepage {
 //Admin Page
 
 	//edit employee button
-	@FindBy(id="editEmployee")
+	@FindBy(id="managerButton1")
 	public WebElement editEmployeeBtn;
 
 	//edit location button
-	@FindBy(id="editLocation")
+	@FindBy(id="locationButton")
 	public WebElement editLocationBtn;
 
 
@@ -267,22 +271,30 @@ public class Homepage {
 //Edit employee elements
 	
 	//delete an employee button
-	@FindBy(id="delete1")
+	@FindBy(xpath="/html/body/app-root/app-profile/div/div/div[2]/app-manager-edit/div/table/tbody/tr[4]/td[4]/button")
 	public WebElement employeeDeleteBtn;
 	
 	//promote an employee button
-	@FindBy(id="promote1")
+	@FindBy(xpath="/html/body/app-root/app-profile/div/div/div[2]/app-manager-edit/div/table/tbody/tr[2]/td[5]/button")
 	public WebElement employeepromoteBtn;
 
-
-// The Navigation bar 
+	//2nd page of employees
+	@FindBy(xpath="/html/body/app-root/app-profile/div/div/div[2]/app-manager-edit/div/div/pagination-controls/pagination-template/ul/li[4]/a")
+	public WebElement page2Employees;
+	
+	//4th page of employees
+	@FindBy(xpath="/html/body/app-root/app-profile/div/div/div[2]/app-manager-edit/div/div/pagination-controls/pagination-template/ul/li[6]/a")
+	public WebElement page4Employees;
+	
+	
+	// The Navigation bar 
 	
 	// the drop down to get to the profile 
-	@FindBy(id ="user-dropa")
+	@FindBy(id ="navbarDropdown")
 	public WebElement userDropDownBtn;
 	
 	// the profile button in the nav bar
-	@FindBy(id="profile-btn")
+	@FindBy(id="profileAnchor")
 	public WebElement profileBtn;
 	
 	// the logout button in the nav bar
@@ -294,12 +306,4 @@ public class Homepage {
 	public WebElement driverBtn;
 
 
-
-	
-	
-	
-	
-	
-	
-	
 }
