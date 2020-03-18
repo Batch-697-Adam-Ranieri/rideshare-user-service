@@ -3,34 +3,35 @@ Feature: Admin pages and things he can do
 
 
 Scenario: Admin Login
-Given The user is on the home page
-When The user clicks on the login button 
-When  The user types in the username
-When  The user types in the password
-When  The user clicks on the submit button
-Then  The user will be on the Admin Page
+Given The user is on the HomePage
+When The user clicks on the LoginBtn
+When  The user types in the Username
+When  The user types in the Password
+When  The user clicks on the SubmitBtn
+Then  The user should be on the Profile Page
 
 Scenario: Admin Changes their Contact
-When  The user clicks on the contact button 
-When The user types in phone number 
+Given The user is on the Profile Page
+When The user types in the phone number 
 When The user clicks on save
-Then The user should still be on the Profile Page 
+Then The user should be on the Profile Page 
 
 
 
 
 Scenario: Admin Fires Employee
+When The user clicks on the Edit Employee button
 When The user clicks on the Delete button
-Then The user is on the Edit employee page 
+Then The user should be on the Edit employee page 
 
 Scenario: Admin Promotes a Employee
 When The user clicks on the Promote button
-Then The user is on the Edit employee page 
+Then The user should be on the Edit employee page 
 
 
 Scenario: The Admin Logout
 When The user clicks on the profile button
 When The user clicks on the logout button 
-Then The user is on the Home Page
+Then The user should be on the Home Page
 
 
