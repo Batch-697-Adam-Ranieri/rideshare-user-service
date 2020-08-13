@@ -101,3 +101,8 @@ Week1-CoreJava/TheGame/src/main/resources/Associates.txt
 #MacOs file
 
 .DS_Store
+
+project.properties
+*.properties
+project.properties
+application.properties
